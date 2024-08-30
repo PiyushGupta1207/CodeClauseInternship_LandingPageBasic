@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Language Translator</title>
+    <link rel="stylesheet" href="proj2.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Language Translator</h1>
+        </header>
+
+    <div class="translation-section">
+        <div class="input-section">
+            <textarea id="source-text" placeholder="Enter text or speak..." rows="6"></textarea>
+            <div class="language-select">
+                <label for="source-language">From:</label>
+                <select id="source-language">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ja">Japanese</option>
+                    <option value="it">Italian</option>
+                    
+                </select>
+            </div>
+        </div>
+
+        <div class="output-section">
+            <textarea id="translated-text" placeholder="Translation will appear here..." rows="6"></textarea>
+            <div class="language-select">
+                <label for="target-language">To:</label>
+                <select id="target-language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr" selected>French</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ja">Japanese</option>
+                    <option value="it">Italian</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="controls">
+        <button onclick="translateText()" id="translate-button">Translate</button>
+        </div>
+
+    <script src="proj2.js"></script>
+</body>
+</html>
